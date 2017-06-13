@@ -1,0 +1,22 @@
+{
+  "name": "async_ll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:1": "node 1.callbacks/index.js",
+    "start:2": "node 2.promises/index.js",
+    "start:2.1": "node 2.promises/parallel.js",
+    "start:3": "node 3.generators/index.js",
+    "start:3.1": "node 3.generators/fibonacci.js",
+    "start:3.2": "node 3.generators/with-promises.js",
+    "start:3.3": "node 3.generators/with-co.js",
+    "start:4": "node 4.async_await/index.js",
+    "start:4.1": "node 4.async_await/parallel.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "co": "^4.6.0"
+  }
+}
