@@ -1,5 +1,3 @@
-'use strict';
-
 const co = require('co');
 
 const sum = (a, b) => Promise.resolve(a + b);

@@ -1,5 +1,3 @@
-'use strict';
-
 const sum = (a, b) => Promise.resolve('Sum: ' + (a + b));
 const div = (a, b) => Promise.resolve('Div: ' + (a / b));
 

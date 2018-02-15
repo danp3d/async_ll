@@ -1,5 +1,3 @@
-'use strict';
-
 const sum = (a, b) => Promise.resolve(a + b);
 const div = (a, b) => Promise.resolve(a / b);
 
@@ -10,11 +8,15 @@ const exec = async (a, b) => {
 };
 
 const main = async () => {
-  await Promise.all([
-    exec(1, 2),
-    exec(1, 0)
-  ]);
-  console.log('App finished executing');
+  try {
+    await Promise.all([
+      exec(1, 2),
+      exec(1, 0)
+    ]);
+    console.log('App finished executing');
+  } catch (err) {
+    console.log('Error:', err);
+  }
 };
 
 main();

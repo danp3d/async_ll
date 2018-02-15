@@ -1,5 +1,3 @@
-'use strict';
-
 // Each async function returns a promise
 const sum = (a, b) => Promise.resolve(a + b);
 const div = (a, b) => Promise.resolve(a / b);
@@ -12,5 +10,7 @@ sum(1, 2).then((res) => {
   return 'values are chained!'
 }).then((val) => {
   console.log('Finished executing.', val);
+}).catch((err) => {
+  console.log('Error:', err);
 });
 

@@ -1,5 +1,3 @@
-'use strict';
-
 function* fibonacci(max) {
   let [ prev, curr ] = [ 1, 0 ];
   let buffer;

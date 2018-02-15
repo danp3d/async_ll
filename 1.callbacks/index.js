@@ -1,5 +1,3 @@
-'use strict';
-
 // Each async function receives a callback.
 // The standard callback signature is (err, data)
 const sum = (a, b, cb) => {

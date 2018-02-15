@@ -1,5 +1,3 @@
-'use strict';
-
 // Each async function returns a promise
 const sum = (a, b) => Promise.resolve(a + b);
 const div = (a, b) => Promise.resolve(a / b);
@@ -22,5 +20,7 @@ Promise.all(params.map((pars) => {
   return exec(pars[0], pars[1]);
 })).then(() => {
   console.log('App finished executing');
+}).catch((err) => {
+  console.log('Error:', err);
 });
 
